@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'Cheltenham';
+    src: url(fonts/cheltenham.ttf);
+}
+
+@font-face {
+    font-family: 'Imperial Regular';
+    src: url(fonts/imperial.otf);
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/*
+div, section {
+    border: 1px solid black;
+}
+*/
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 70%;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+}
+    header li a {
+        float: left;
+    }
+
+body {
+    margin: 0 10%;
+}
+
+main {
+    font-family: 'Cheltenham', Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.minutes {
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p a, .minutes a {
+    color: gray;
+}
+
+.topHeader, .midHeader, .bottomHeader {
+    width: 100%;
+    float: left;
+}
+    .bottomHeader {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-top: 1px solid lightgray;
+        border-bottom: 4px double black;
+    }
+
+.topHeaderA, .topHeaderB, .topHeaderC {
+    float: left;
+    width: 33.3333%;
+}
+    .topHeaderA i {
+        padding-left: 2%;
+        padding-right: 3%;
+    }
+
+.midHeaderA, .midHeaderB, .midHeaderC {
+    float: left;
+    width: 33.3333%;
+}
+    .midHeaderA {
+        padding-top: 1%;
+    }
+    .midHeaderA i {
+        display: none;
+    }
+    .midHeaderB img {
+        width: 100%;
+    }
+    .midHeaderC img {
+        width: 30%;
+        padding-top: 5%;
+    }
+
+.topHeaderB ul, .bottomHeader ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topHeaderC, .midHeaderC {
+    text-align: right;
+}
+
+.topHeaderC button {
+    padding: 2%;
+    background: #557b95;
+    color: white;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 90%;
+}
+
+.main {
+    float: left;
+    width: 71%;
+    border-right: 1px solid lightgray;
+    padding-right: 1.5%;
+}
+    .mainTop {
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+        .mainArticles {
+            float: left;
+            width: 40%;
+        }
+            .mainArticleA, .mainArticleB, .mainArticleC {
+                float: left;
+                width: 100%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                border-bottom: 1px solid lightgray;
+            }
+            .mainArticleA {
+                padding-top: 0;
+            }
+            .mainArticleC {
+                border: none;
+            }
+
+        .mainImageHolder {
+            float: left;
+            width: 60%;
+            height: 25rem;
+            padding-left: 2%;
+        }
+            .mainImage {
+                float: left;
+                width: 100%;
+                height: 75%;
+                background-image: url(../images/soldier.jpg);
+                background-size: cover;
+                background-position: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+                .mainImageCaption {
+                    color: white;
+                    display: inline-block;
+                    margin: 3%;
+                    font-size: 1rem;
+                    width: 80%;
+                }
+                .mainImagePhotographer {
+                    color: white;
+                    display: inline-block;
+                    margin: 3%;
+                    font-size: 0.5rem;
+                    padding-top: 40.5%;
+                }
+
+    .mainBottom {
+        float: left;
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-bottom: 1px solid black;
+        margin-bottom: 1%;
+    }
+        .articles {
+            float: left;
+            width: 40%;
+        }
+            .articleA, .articleB {
+                float: left;
+                width: 100%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                border-bottom: 1px solid lightgray;
+            }
+            .articleA {
+                padding-top: 0;
+            }
+            .articleB {
+                border: none;
+            }
+
+        .articlesImage {
+            float: left;
+            width: 60%;
+            padding-left: 2%;
+            text-align: right;
+        }
+            .articlesImage img {
+                width: 100%;
+                height: 17.5rem;
+            }
+            .articlesImage span a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.5rem;
+                color: gray;
+            }
+
+.side {
+    float: left;
+    width: 29%;
+    padding-left: 1.5%;
+}
+    .sideArticles {
+        float: left;
+        width: 100%;
+    }
+        .sideArticleA {
+            float: left;
+            width: 100%;
+            padding-bottom: 3%;
+            border-bottom: 1px solid lightgray;
+        }
+            .sideArticleA h3 {
+                font-size: 1.5rem;
+            }
+            .sideImage {
+                float: left;
+                width: 100%;
+                height: 12rem;
+                background-image: url(../images/madrid.jpg);
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 4%;
+            }
+                .sideImage span {
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: white;
+                    display: inline-block;
+                    margin: 5%;
+                    font-size: 0.75rem;
+                    margin-top: 50%;
+                    margin-left: 22%;
+                }
+
+        .sideArticleB, .sideArticleC {
+            float: left;
+            width: 50%;
+            margin-top: 4.5%;
+            margin-bottom: 4.5%;
+        }
+            .sideArticleB {
+                border-right: 1px solid lightgray;
+                padding-right: 4.5%;
+            }
+            .sideArticleC {
+                padding-left: 4.5%;
+            }
+            .sideArticleB img, .sideArticleC img {
+                float: left;
+                width: 100%;
+                height: 6rem;
+                padding-bottom: 5%;
+            }
+    
+    .opinions {
+        float: left;
+        width: 100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid lightgray;
+        padding-top: 2.5%;
+    }
+        .opinions h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.75rem;
+        }
+        .opinionA {
+            float: left;
+            width: 88%;
+            padding-bottom: 4%;
+        }
+        .opinionAImage {
+            float: left;
+            width: 12%;
+            padding-top: 3%;
+        }
+            .opinionAImage img {
+                float: left;
+                width: 100%;
+            }
+
+        .opinionBContainer {
+            float: left;
+            width: 100%;
+            border-top: 1px solid lightgray;
+            padding-top: 4%;
+            padding-bottom: 4%;
+        }
+            .opinionB {
+                float: left;
+                width: 60%;
+            }
+            .opinionBImage {
+                float: left;
+                width: 40%;
+            }
+            .opinionBImage img {
+                float: left;
+                width: 100%;
+            }
+
+        .writer a {
+            font-size: 0.75rem;
+            color: gray;
+        }
+
+
+@media (max-width: 986px) {
+    .topHeaderA i, .topHeaderB li, .topHeaderC button, .midHeaderA span {
+        display: none;
+    }
+
+    .midHeaderA i {
+        display: inline;
+        padding-right: 4%;
+    }
+
+    .bottomHeader nav li:nth-last-of-type(-n+3) {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .side {
+        width: 100%;
+    }
+
+    .sideArticles{
+        width: 60%;
+        padding-right: 5%;
+        padding-top: 2.5%;
+    }
+
+    .opinions {
+        width: 40%;
+        border-top: none;
+    }
+}
+
+@media (max-width: 834px) {
+    .bottomHeader nav li:nth-last-of-type(-n+6) {
+        display: none;
+    }
+}
+
+@media (max-width: 721px) {
+    .mainArticles, .mainImageHolder {
+        width: 100%;
+    }
+    .mainImageHolder {
+        height: 20rem;
+        padding-left: 0;
+    }
+
+    .mainImage {
+        height: 95%;
+    }
+
+    .mainArticleA, .mainArticleB, .mainArticleC {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .mainArticleA {
+        padding-top: 1%;
+    }
+}
+
+@media (max-width: 660px) {
+    .articlesImage img {
+        height: 13rem;
+    }
+}
+
+@media (max-width: 636px) {
+    header {
+        padding-top: 3%;
+    }
+
+    .bottomHeader nav li:nth-last-of-type(-n+9) {
+        display: none;
+    }
+
+    .midHeaderC {
+        display: none;
+    }
+}
+
+@media (max-width: 493px) {
+    .bottomHeader nav li:nth-last-of-type(-n+12) {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .bottomHeader nav li {
+        display: none;
+    }
+
+    .bottomHeader {
+        border-top: none;
+    }
+    
+}
