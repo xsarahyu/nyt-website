@@ -1,7 +1,7 @@
 # The New York Times Website
 
 ### Description
-A fully responsive mock-up of the New York Times homepage.
+A responsive replica of the New York Times homepage.
 
 <img src="nyt.png" alt="preview of my nyt website">
 
